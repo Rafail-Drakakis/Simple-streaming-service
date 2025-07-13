@@ -24,7 +24,7 @@ make
 ### Execution:
 After compilation, execute the program with:
 ```
-./cs240StreamingService path/to/input_file
+./StreamingService path/to/input_file
 ```
 Replace `path/to/input_file` with the path to the file containing the event list.
 

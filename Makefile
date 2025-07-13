@@ -1,5 +1,5 @@
 CC=gcc -g
-TARGET=cs240StreamingService
+TARGET=StreamingService
 SRC=main.c streaming_service.c
 
 $(TARGET): $(SRC)
