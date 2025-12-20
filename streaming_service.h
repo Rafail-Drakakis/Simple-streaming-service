@@ -15,11 +15,17 @@
 #ifndef __CS240_STREAMING_SERVICE_H__
 #define __CS240_STREAMING_SERVICE_H__
 
+#include <stddef.h>
+
 /* number of distinct movie categories */
 #define CATEGORY_COUNT 6
 
 /* value used for the sentinel user node */
 #define SENTINEL_UID (-1)
+
+/* Return codes */
+#define SUCCESS 0
+#define ERROR_FAILURE -1
 
 typedef enum {
 	HORROR,
@@ -188,4 +194,39 @@ void print_movies(void);
  * users list
  */
 void print_users(void);
-#endif
+
+/*
+ * Helper function declarations
+ */
+
+/*
+ * Check if a user with the given UID exists
+ * Returns 1 if user exists, 0 otherwise
+ */
+int user_exists(int uid);
+
+/*
+ * Find a user by UID
+ * Returns pointer to user if found, NULL otherwise
+ */
+struct user* find_user_by_uid(int uid);
+
+/*
+ * Get category name as string
+ * Returns category name string
+ */
+const char* get_category_name(movieCategory_t category);
+
+/*
+ * Initialize all data structures
+ * Must be called before using the service
+ */
+void init_structures(void);
+
+/*
+ * Clean up and free all allocated memory
+ * Must be called before program termination
+ */
+void destroy_structures(void);
+
+#endif /* __CS240_STREAMING_SERVICE_H__ */
