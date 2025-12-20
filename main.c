@@ -1,17 +1,3 @@
-/*
- * ============================================
- * file: main.c
- * @Author John Malliotakis (jmal@csd.uoc.gr)
- * @Version 23/10/2023
- *
- * @e-mail hy240@csd.uoc.gr
- *
- * @brief Main function
- *        for CS240 Project Phase 1,
- *        Winter Semester 2023-2024
- * @see   Compile using supplied Makefile by running: make
- * ============================================
- */
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>

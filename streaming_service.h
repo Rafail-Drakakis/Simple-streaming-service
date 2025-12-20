@@ -1,17 +1,3 @@
-/*
- * ============================================
- * file: streaming_service.h
- * @Author John Malliotakis (jmal@csd.uoc.gr)
- * @Version 23/10/2023
- *
- * @e-mail hy240@csd.uoc.gr
- *
- * @brief Structure and function declarations
- *        for CS240 Project Phase 1,
- *        Winter Semester 2023-2024
- * ============================================
- */
-
 #ifndef __CS240_STREAMING_SERVICE_H__
 #define __CS240_STREAMING_SERVICE_H__
 
